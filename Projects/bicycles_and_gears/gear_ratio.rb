@@ -1,11 +1,24 @@
 #!usr/bin/env ruby
 
-chainring 	= 52					# Number of teeth
-cog			= 11
-ratio		= chainring / cog.to_f
-puts ratio							# -> 4.72727272727273
+class Gear
+	attr_reader :chainring, :cog, :rim, :tire
+	
+	def initialize(chainring, cog, rim, tire)
+		@chainring = chainring
+		@cog	   = cog
+		@rim	   = rim
+		@tire	   = tire
+	end
 
-chainring	= 30
-cog			= 27
-ratio		= chainring / cog.to_f	
-puts ratio							# -> 1.11111111111111
+	def ratio
+		chainring / cog.to_f
+	end
+
+	def gear_inches
+		# Tire goes around rim twice for diameter
+		ratio * (rim + (tire * 2))
+	end
+end
+
+puts Gear.new(52, 11, 26, 1.5).gear_inches	# -> 137.090909090909
+puts Gear.new(52, 11, 24, 1.25).gear_inches	# -> 125.272727272727
