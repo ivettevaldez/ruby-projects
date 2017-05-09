@@ -1237,3 +1237,509 @@ Processing by UsersController#show as HTML
   Rendered layouts/_header.html.erb (0.3ms)
   Rendered layouts/_footer.html.erb (0.1ms)
 Completed 200 OK in 30ms (Views: 29.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for ::1 at 2017-05-08 13:25:24 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 692ms (Views: 650.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/turbolinks.self-0a993f73466e2d0b5abaddcfe64e28fc7be51a14bf4bdd9774b57832c76b5c37.js?body=1" for 127.0.0.1 at 2017-05-08 13:25:26 -0600
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2017-05-08 13:25:26 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-05-08 13:25:26 -0600
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2017-05-08 13:25:26 -0600
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-08 13:25:26 -0600
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-08 13:25:26 -0600
+
+
+Started GET "/users/1" for ::1 at 2017-05-08 13:52:18 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 319ms (Views: 311.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-08 13:52:18 -0600
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-08 13:52:18 -0600
+
+
+Started GET "/login" for ::1 at 2017-05-08 13:52:22 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (189.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 222ms (Views: 221.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2017-05-08 13:52:39 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bATZQH0k8sr0cfAjb6YtVikpXfuKnmOJc+KFNeynpXMIwR80L7mNkfsxnpDHyqZCaL5xo8GF8cvYRbDTzlgMQw==", "session"=>{"email"=>"silvia.valdez@hunabsys.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started POST "/login" for ::1 at 2017-05-08 13:53:25 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8a1bcoxjc96SBEjH4PVejeMAoQ7zGxqL+ObosyMEWzmVaJ0G3v4MhZ1EJnRImdWZopeNVrgAiMlTQd1VAfvyCQ==", "session"=>{"email"=>"silvia.valdez.e@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2017-05-08 15:58:51 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8a1bcoxjc96SBEjH4PVejeMAoQ7zGxqL+ObosyMEWzmVaJ0G3v4MhZ1EJnRImdWZopeNVrgAiMlTQd1VAfvyCQ==", "session"=>{"email"=>"silvia.valdez.e@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (8.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "silvia.valdez.e@gmail.com"]]
+  Rendered sessions/new.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 292ms (Views: 205.1ms | ActiveRecord: 9.7ms)
+
+
+Started POST "/login" for ::1 at 2017-05-08 15:59:01 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qI8ElLx11vlP4SgI8zO1nQxAXCN3Qhz0vlXHWGUlFgPMSsLg7uipokChRrtbXz6JTddwezxZjrYV8vK+R9q/Mw==", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", ""]]
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2017-05-08 15:59:18 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 42ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rails-5fda49c507400f48b928966bfbc2c773994ae5096ea21efdecebc630df1de5a1.gif" for ::1 at 2017-05-08 15:59:18 -0600
+
+
+Started GET "/login" for ::1 at 2017-05-08 16:17:45 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 178ms (Views: 177.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2017-05-08 16:17:47 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HNgWgqve/1eV1wr7+iklV/ToHRw1pGbm7gtuZghxsv14HdD2+UOADJqXZEhSRa5DtX8xRH6/9KRFrFuAKo4bzQ==", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (5.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", ""]]
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 45ms (Views: 35.2ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-08 16:17:50 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 86ms (Views: 85.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_up" for ::1 at 2017-05-08 16:17:52 -0600
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (3.0ms)
+  Rendered users/new.html.erb within layouts/application (10.2ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 60ms (Views: 56.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for ::1 at 2017-05-08 16:18:00 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2017-05-08 16:19:00 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h2+7nkmpNhEp9zv7mEj2+NDQeP9t6w9XrB+zfjiwB/Hjqn3qGzRJSia3VUgwJH3skUdUpybwnRUHuIaYGk+uwQ==", "session"=>{"email"=>"silvia.valdez.e@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "silvia.valdez.e@gmail.com"]]
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 61ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for ::1 at 2017-05-08 16:19:00 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for ::1 at 2017-05-08 16:27:19 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 0.4ms)
+
+SyntaxError (/Users/hunabsys_sr1/Repos/Personal/RubyProjects/Tutorials/TheRubyOnRailsTutorial/sample_app/app/views/layouts/_header.html.erb:8: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                               ^
+/Users/hunabsys_sr1/Repos/Personal/RubyProjects/Tutorials/TheRubyOnRailsTutorial/sample_app/app/views/layouts/_header.html.erb:9: syntax error, unexpected keyword_else, expecting ')'
+'.freeze;				 else 
+         				     ^
+/Users/hunabsys_sr1/Repos/Personal/RubyProjects/Tutorials/TheRubyOnRailsTutorial/sample_app/app/views/layouts/_header.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;				 end 
+         				    ^
+/Users/hunabsys_sr1/Repos/Personal/RubyProjects/Tutorials/TheRubyOnRailsTutorial/sample_app/app/views/layouts/_header.html.erb:17: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/hunabsys_sr1/Repos/Personal/RubyProjects/Tutorials/TheRubyOnRailsTutorial/sample_app/app/views/layouts/_header.html.erb:19: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/layouts/_header.html.erb:8: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+  app/views/layouts/_header.html.erb:9: syntax error, unexpected keyword_else, expecting ')'
+  app/views/layouts/_header.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+  app/views/layouts/_header.html.erb:17: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/layouts/_header.html.erb:19: syntax error, unexpected keyword_end, expecting ')'
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3437110939661184401_70324700177180'
+
+
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (63.4ms)
+
+
+Started GET "/users/1" for ::1 at 2017-05-08 16:27:31 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/Users/hunabsys_sr1/Repos/Personal/RubyProjects/Tutorials/TheRubyOnRailsTutorial/sample_app/app/views/layouts/_header.html.erb:8: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                               ^
+/Users/hunabsys_sr1/Repos/Personal/RubyProjects/Tutorials/TheRubyOnRailsTutorial/sample_app/app/views/layouts/_header.html.erb:10: syntax error, unexpected keyword_else, expecting ')'
+'.freeze;				 else 
+         				     ^
+/Users/hunabsys_sr1/Repos/Personal/RubyProjects/Tutorials/TheRubyOnRailsTutorial/sample_app/app/views/layouts/_header.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;				 end 
+         				    ^
+/Users/hunabsys_sr1/Repos/Personal/RubyProjects/Tutorials/TheRubyOnRailsTutorial/sample_app/app/views/layouts/_header.html.erb:18: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/hunabsys_sr1/Repos/Personal/RubyProjects/Tutorials/TheRubyOnRailsTutorial/sample_app/app/views/layouts/_header.html.erb:20: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/layouts/_header.html.erb:8: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+  app/views/layouts/_header.html.erb:10: syntax error, unexpected keyword_else, expecting ')'
+  app/views/layouts/_header.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+  app/views/layouts/_header.html.erb:18: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/layouts/_header.html.erb:20: syntax error, unexpected keyword_end, expecting ')'
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3437110939661184401_70324700177180'
+
+
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (62.4ms)
+
+
+Started GET "/users/1" for ::1 at 2017-05-08 16:28:21 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for ::1 at 2017-05-08 16:32:30 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 103ms (Views: 102.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for ::1 at 2017-05-08 16:32:36 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for ::1 at 2017-05-08 16:32:37 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for ::1 at 2017-05-08 16:32:38 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for ::1 at 2017-05-08 16:32:38 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for ::1 at 2017-05-08 16:32:38 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for ::1 at 2017-05-08 16:33:19 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 211ms (Views: 210.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-05-08 16:33:19 -0600
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for ::1 at 2017-05-08 16:33:19 -0600
+
+
+Started GET "/users/1" for ::1 at 2017-05-08 16:33:24 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 45ms (Views: 43.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-08 16:33:34 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (19.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for ::1 at 2017-05-08 16:33:35 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for ::1 at 2017-05-08 16:34:42 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-08 16:34:47 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 51.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-08 18:05:26 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (20.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 221ms (Views: 217.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-08 18:05:27 -0600
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-08 18:05:27 -0600
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-08 18:05:27 -0600
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-05-08 18:05:27 -0600
+
+
+Started DELETE "/logout" for ::1 at 2017-05-08 18:05:29 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DoawAXaBb4ZlxwQ9sOvt2l8lCTAhKZ31VyT9DgFwyb5qQ3Z1JBwQ3WqHao4Yh2bOHrIlaGoyD7f8g8joI49gjg=="}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `delelte' for #<ActionDispatch::Request::Session:0x007feb81833b90>):
+  app/helpers/sessions_helper.rb:16:in `log_out'
+  app/controllers/sessions_controller.rb:18:in `destroy'
+
+
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (70.2ms)
+
+
+Started DELETE "/logout" for ::1 at 2017-05-08 18:05:52 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DoawAXaBb4ZlxwQ9sOvt2l8lCTAhKZ31VyT9DgFwyb5qQ3Z1JBwQ3WqHao4Yh2bOHrIlaGoyD7f8g8joI49gjg=="}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `delelte' for #<ActionDispatch::Request::Session:0x007feb80984220>):
+  app/helpers/sessions_helper.rb:16:in `log_out'
+  app/controllers/sessions_controller.rb:18:in `destroy'
+
+
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (64.0ms)
+
+
+Started DELETE "/logout" for ::1 at 2017-05-08 18:05:56 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DoawAXaBb4ZlxwQ9sOvt2l8lCTAhKZ31VyT9DgFwyb5qQ3Z1JBwQ3WqHao4Yh2bOHrIlaGoyD7f8g8joI49gjg=="}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `delelte' for #<ActionDispatch::Request::Session:0x007feb80c604f8>):
+  app/helpers/sessions_helper.rb:16:in `log_out'
+  app/controllers/sessions_controller.rb:18:in `destroy'
+
+
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /Users/hunabsys_sr1/.rvm/gems/ruby-2.2.6@tutorial4/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (60.1ms)
+
+
+Started DELETE "/logout" for ::1 at 2017-05-08 18:06:18 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DoawAXaBb4ZlxwQ9sOvt2l8lCTAhKZ31VyT9DgFwyb5qQ3Z1JBwQ3WqHao4Yh2bOHrIlaGoyD7f8g8joI49gjg=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-08 18:06:18 -0600
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 153ms (Views: 152.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for ::1 at 2017-05-08 18:06:21 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.2ms)

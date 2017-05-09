@@ -1,1 +1,4 @@
-# Empty
+ivette: 
+  name: Ivette Valdez
+  email: silvia.valdez.e@gmail.com
+  password_digest: <%= User.digest('password') %>
