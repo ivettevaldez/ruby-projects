@@ -38,4 +38,17 @@ class PersonalPortfoliosController < ApplicationController
             end
         end
     end
+
+    def destroy
+        # Perform the lookup
+        @portfolio_item = PersonalPortfolio.find(params[:id])
+        
+        # Delete/destroy the record
+        @portfolio_item.destroy
+
+        # Redirect
+        respond_to do |format|
+            format.html { redirect_to personal_portfolios_url, notice: 'Portfolio item was removed.' }
+        end
+      end
 end
