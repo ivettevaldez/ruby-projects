@@ -3,7 +3,12 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
   get 'portfolio/:id', to: 'personal_portfolios#show', as: 'personal_portfolio_show'
 
-  resources :blogs
+  resources :blogs do
+    member do
+      get :toggle_status
+    end
+  end
+
   resources :personal_portfolios, except: [:show]
 
   root to: 'pages#home'
