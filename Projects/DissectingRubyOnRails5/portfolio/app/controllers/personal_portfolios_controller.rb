@@ -3,6 +3,10 @@ class PersonalPortfoliosController < ApplicationController
         @portfolio_items = PersonalPortfolio.all
     end
 
+    def show
+        @portfolio_item = PersonalPortfolio.find(params[:id])
+    end
+
     def new
         @portfolio_item = PersonalPortfolio.new
     end
