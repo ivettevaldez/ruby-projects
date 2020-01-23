@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get 'pages/about', to: 'pages#about'
-  get 'pages/contact', to: 'pages#contact'
+  get 'about', to: 'pages#about'
+  get 'advertising/soifjoisdf/lead', to: 'pages#contact', as: 'lead'
 
   resources :blogs
 end
