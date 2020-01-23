@@ -17,6 +17,10 @@ Rails.application.routes.draw do
   # Route globbing.
   get 'posts/*missing', to: 'posts#missing'
 
+  # Dynamic routes.
+  get 'query/:else/:another', to: 'pages#something'
+  get 'query/:else/', to: 'pages#something'
+
   # Root page (Home).
   root to: 'pages#home'
 end

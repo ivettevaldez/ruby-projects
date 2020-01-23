@@ -7,4 +7,9 @@ class PagesController < ApplicationController
 
   def home
   end
+
+  def something
+    @else = params[:else]
+    @another = params[:another]
+  end
 end
