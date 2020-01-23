@@ -12,6 +12,10 @@ Rails.application.routes.draw do
   end
 
   resources :blogs
+  resources :posts
+
+  # Route globbing.
+  get 'posts/*missing', to: 'posts#missing'
 
   # Root page (Home).
   root to: 'pages#home'
