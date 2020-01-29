@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Blogs</h1>
+
+<% cache do %>
+  <div>
+    <%= render partial: @blogs, spacer_template: 'blog_ruler' %>
+  </div>
+<% end %>
+
+<br>
+
+<%= link_to 'New Blog', new_blog_path %>
