@@ -1,4 +1,5 @@
 class PersonalPortfoliosController < ApplicationController
+    before_action :set_portfolio_item, only: [:show, :edit, :update, :destroy]
     layout 'personal_portfolio'
 
     def index
@@ -10,7 +11,6 @@ class PersonalPortfoliosController < ApplicationController
     end
 
     def show
-        @portfolio_item = PersonalPortfolio.find(params[:id])
     end
 
     def new
@@ -31,12 +31,9 @@ class PersonalPortfoliosController < ApplicationController
     end
 
     def edit
-        @portfolio_item = PersonalPortfolio.find(params[:id])
     end
     
     def update
-        @portfolio_item = PersonalPortfolio.find(params[:id])
-        
         respond_to do |format|
             if @portfolio_item.update(personal_portfolio_params)
                 format.html { redirect_to personal_portfolios_path, notice: 'Portfolio item was successfully updated.' }
@@ -47,9 +44,6 @@ class PersonalPortfoliosController < ApplicationController
     end
 
     def destroy
-        # Perform the lookup
-        @portfolio_item = PersonalPortfolio.find(params[:id])
-        
         # Delete/destroy the record
         @portfolio_item.destroy
 
@@ -67,5 +61,9 @@ class PersonalPortfoliosController < ApplicationController
                                                         :body, 
                                                         technologies_attributes: [:name]
                                                        )
+        end
+
+        def set_portfolio_item
+            @portfolio_item = PersonalPortfolio.find(params[:id])
         end
 end
