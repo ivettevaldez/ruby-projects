@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Technologies creation.
 class CreateTechnologies < ActiveRecord::Migration[6.0]
   def change
     create_table :technologies do |t|
