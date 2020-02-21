@@ -54,5 +54,7 @@ gem 'devise', '~> 4.2'
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.3.1'
 gem 'petergate', '~> 2.0'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
+gem 'kaminari', '~> 1.2'
 
 gem 'ivette_valdez_view_tool', git: 'https://github.com/ivettevaldez/ivette-valdez-view-tool'
