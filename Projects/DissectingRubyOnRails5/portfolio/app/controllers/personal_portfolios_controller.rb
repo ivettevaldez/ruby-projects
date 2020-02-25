@@ -10,7 +10,7 @@ class PersonalPortfoliosController < ApplicationController
   layout 'personal_portfolio'
 
   def index
-    @portfolio_items = PersonalPortfolio.all
+    @portfolio_items = PersonalPortfolio.by_position
   end
 
   def react
